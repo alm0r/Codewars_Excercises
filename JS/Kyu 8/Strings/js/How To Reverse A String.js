@@ -13,6 +13,19 @@ function reverser(string) {
 reverser("world");
 reverser("word");
 
+// With arrow function
+const solutionArrow = (str) => str.split("").reverse().join("");
+
+// Longer a Basic
+function solutionBasic(str) {
+  let splitString = str.split("");
+  let reverseArray = splitString.reverse();
+  let joinArray = reverseArray.join("");
+  return joinArray;
+}
+
+console.log(solutionBasic("world"));
+
 //Method 2
 function loopReverser(string) {
   let reversedWord = "";
