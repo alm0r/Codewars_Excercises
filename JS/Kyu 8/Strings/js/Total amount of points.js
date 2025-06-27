@@ -24,7 +24,6 @@
 
 ///////////////////////////////////////////////////////////////////////////////////
 
-let scores = ["3:1", "2:2", "0:1"];
 
 // Method
 // prettier-ignore
@@ -48,20 +47,20 @@ function points(games) {
   return total;
 }
 
-// For Loop
-// function points(games) {
-//   let totalPoints = 0;
-//   for (let i = 0; i < games.length; i++) {
-//     console.log(games[i].split(""));
-//     let x = games[i][0];
-//     let y = games[i][2];
-//     if (x > y) {
-//       totalPoints += 3;
-//     } else if (x < 0) {
-//       totalPoints += 0;
-//     } else if (x === y) {
-//       totalPoints += 1;
-//     }
-//   }
-//   return totalPoints;
-// }
+For Loop
+function points(games) {
+  let totalPoints = 0;
+  for (let i = 0; i < games.length; i++) {
+    console.log(games[i].split(""));
+    let x = games[i][0];
+    let y = games[i][2];
+    if (x > y) {
+      totalPoints += 3;
+    } else if (x < 0) {
+      totalPoints += 0;
+    } else if (x === y) {
+      totalPoints += 1;
+    }
+  }
+  return totalPoints;
+}
