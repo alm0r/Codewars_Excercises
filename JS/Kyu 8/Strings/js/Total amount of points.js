@@ -24,7 +24,6 @@
 
 ///////////////////////////////////////////////////////////////////////////////////
 
-
 // Method
 // prettier-ignore
 const points = (games) => games.reduce((output, current) => {
@@ -47,7 +46,7 @@ function points(games) {
   return total;
 }
 
-For Loop
+// For Loop
 function points(games) {
   let totalPoints = 0;
   for (let i = 0; i < games.length; i++) {
