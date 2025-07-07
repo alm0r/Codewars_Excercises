@@ -13,13 +13,7 @@
 
 // ___________________________________________________________________;
 
-class Ghost {
-  constructor() {
-    let colors = ["white", "yellow", "purple", "red"];
-    this.color = colors[Math.floor(Math.random() * colors.length)];
-  }
-}
-
+//
 class Ghost {
   constructor() {
     this.colors = ["white", "yellow", "purple", "red"];
@@ -29,6 +23,15 @@ class Ghost {
   }
 }
 
+//
+class Ghost {
+  constructor() {
+    let colors = ["white", "yellow", "purple", "red"];
+    this.color = colors[Math.floor(Math.random() * colors.length)];
+  }
+}
+
+//
 class Ghost {
   constructor() {
     this.color = [`red`, `yellow`, `purple`, `white`][(Math.random() * 4) ^ 0];
