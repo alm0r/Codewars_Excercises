@@ -6,7 +6,7 @@
 
 // Then,
 
-((P-1) ! + 1 ) / P * P 
+// ((P-1) ! + 1 ) / P * P
 
 // should give a whole number, where P! is the factorial of P.
 
@@ -14,21 +14,21 @@
 
 // ___________________________________________________________________;
 
-// 
+//
 function amIWilson(p) {
   p = BigInt(p);
-  const fac = n => n ? n * fac(n-1n) : 1n;
-  const d = (fac(p-1n) + 1n);
+  const fac = (n) => (n ? n * fac(n - 1n) : 1n);
+  const d = fac(p - 1n) + 1n;
   return !(d % (p * p));
 }
 
-// 
+//
 function amIWilson(p) {
-  return p === 5 || p === 13 || p === 563
+  return p === 5 || p === 13 || p === 563;
 }
 
-// 
-const amIWilson = p => [5, 13, 563].includes(p)
+//
+const amIWilson = (p) => [5, 13, 563].includes(p);
 
-// 
-const amIWilson = p => [5, 13, 563].indexOf(p) > -1
+//
+const amIWilson = (p) => [5, 13, 563].indexOf(p) > -1;
