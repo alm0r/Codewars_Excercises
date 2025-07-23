@@ -20,7 +20,7 @@ function positiveSum(arr) {
   return finalNum;
 }
 
-//  Method
+//  Method reduce
 function positiveSum(arr) {
   return arr.reduce((acc, c) => acc + (c > 0 ? c : 0), 0);
 }
